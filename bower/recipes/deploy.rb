@@ -12,5 +12,6 @@ node[:deploy].each do |application, deploy|
   execute 'bower install' do
     command 'bower install --allow-root'
     cwd deploy[:current_path]
+    only_if do ::File.exists?("#{deploy[:deploy_to]}/bower.json") end
   end
 end
