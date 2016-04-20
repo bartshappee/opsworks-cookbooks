@@ -1,0 +1,5 @@
+name        "bower"
+description "Manage bower"
+maintainer  "Bart Shappee"
+license     "Apache 2.0"
+version     "0.0.1"
